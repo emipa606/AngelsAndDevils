@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <ID>def680e3-bfcb-44b7-b8f4-e6ff65b24e84</ID>
+  <ModName>Angels and Devils (Continued)</ModName>
+  <Version>1.0.0.0</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>emipa606</Owner>
+    <Project>AngelsAndDevils</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncMainPage</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>
+
+
+
+

@@ -1,0 +1,763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="SAD_Devil">
+    <defName>Sandy_Devil</defName>
+    <label>Devil</label>
+    <description>A Devil. These people are humans that got resurrected as devils by a special power that works in mysterious ways. These people are psychopaths and full of malice.</description>
+    <alienRace>
+      <generalSettings>
+        <maleGenderProbability>0.5</maleGenderProbability>
+        <!--useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories-->
+        <immuneToAge>true</immuneToAge>
+        <forcedRaceTraitEntries>
+          <!--li>
+                    <defname>NaturalMood</defname>
+                    <degree>2</degree>
+                    <chance>50</chance>
+                    <commonalityMale>50</commonalityMale>
+                    <commonalityFemale>20</commonalityFemale>
+                </li>
+                <li>
+                    <defName>Nerves</defName>
+                    <degree>2</degree>
+                    <chance>50</chance>
+                    <CommonalityMale>50</CommonalityMale>
+                </li>
+                <li>
+                    <defName>Beauty</defName>
+                    <degree>2</degree>
+                    <chance>50</chance>
+                </li>
+                <li>
+                    <defName>Gay</defName>
+                    <chance>50</chance>
+                </li-->
+          <li>
+            <defName>Psychopath</defName>
+            <chance>100</chance>
+            <commonalityMale>100</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+          </li>
+          <li>
+            <defName>Immunity</defName>
+            <degree>1</degree>
+            <chance>100</chance>
+            <commonalityMale>100</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+          </li>
+        </forcedRaceTraitEntries>
+        <disallowedTraits>
+          <li>
+            <defName>Kind</defName>
+          </li>
+          <li>
+            <defName>Beauty</defName>
+          </li>
+          <li>
+            <defName>Wimp</defName>
+          </li>
+          <!--li>Industriousness</li-->
+        </disallowedTraits>
+        <!--factionRelations>
+                <li>
+                    <factions>
+                       <li>Kilhn Clutch</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>100</max>
+                    </goodwill>
+                </li>               
+            </factionRelations-->
+        <allowHumanBios>true</allowHumanBios>
+        <humanRecipeImport>true</humanRecipeImport>
+        <alienPartGenerator>
+          <aliencrowntypes>
+            <li>Average_Normal</li>
+            <!--li>Test_letsWriteSomethingElseHere</li-->
+          </aliencrowntypes>
+          <alienbodytypes>
+            <li>Male</li>
+            <li>Female</li>
+            <li>Hulk</li>
+            <li>Fat</li>
+          </alienbodytypes>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.8,0.3,0.3,1)</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+          </colorChannels>
+          <useGenderedHeads>true</useGenderedHeads>
+          <useGenderedBodies>false</useGenderedBodies>
+          <customDrawSize>(1.0, 1.0)</customDrawSize>
+          <customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+          <customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+          <customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+          <!--headOffset>(0.25, 0.15)</headOffset-->
+          <bodyAddons>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Devil/Wings/DevilRightWing</path>
+              <bodyPart>Sandy_DevilRightWing</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <angle>-10</angle>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.5)</Male>
+                    <Female>(0.012, 0.5)</Female>
+                    <Hulk>(0.012,0.5)</Hulk>
+                    <Fat>(0.012,0.5)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.3, 0.0)</Male>
+                    <Female>(-0.355, 0.0)</Female>
+                    <Hulk>(-0.3,-0.02)</Hulk>
+                    <Fat>(-0.25,0.02)</Fat>
+                  </bodyTypes>
+                  <!--crownTypes>
+								<Average_Normal>(0, 0)</Average_Normal>
+							</crownTypes-->
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Devil/Wings/DevilLeftWing</path>
+              <bodyPart>Sandy_DevilLeftWing</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <angle>-10</angle>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.5)</Male>
+                    <Female>(0.012, 0.5)</Female>
+                    <Hulk>(0.012,0.5)</Hulk>
+                    <Fat>(0.012,0.5)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.3, 0.0)</Male>
+                    <Female>(-0.355, 0.0)</Female>
+                    <Hulk>(-0.3,-0.02)</Hulk>
+                    <Fat>(-0.25,0.02)</Fat>
+                  </bodyTypes>
+                  <!--crownTypes>
+								<Average_Normal>(0, 0)</Average_Normal>
+							</crownTypes-->
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Devil/Wings/DevilRightWing_Hidden</path>
+              <bodyPart>Sandy_DevilRightWing</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <angle>-10</angle>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.5)</Male>
+                    <Female>(0.012, 0.5)</Female>
+                    <Hulk>(0.012,0.5)</Hulk>
+                    <Fat>(0.012,0.5)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.3, 0.0)</Male>
+                    <Female>(-0.355, 0.0)</Female>
+                    <Hulk>(-0.3,-0.02)</Hulk>
+                    <Fat>(-0.25,0.02)</Fat>
+                  </bodyTypes>
+                  <!--crownTypes>
+								<Average_Normal>(0, 0)</Average_Normal>
+							</crownTypes-->
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Devil/Wings/DevilLeftWing_Hidden</path>
+              <bodyPart>Sandy_DevilLeftWing</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <angle>-10</angle>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.5)</Male>
+                    <Female>(0.012, 0.5)</Female>
+                    <Hulk>(0.012,0.5)</Hulk>
+                    <Fat>(0.012,0.5)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.3, 0.0)</Male>
+                    <Female>(-0.355, 0.0)</Female>
+                    <Hulk>(-0.3,-0.02)</Hulk>
+                    <Fat>(-0.25,0.02)</Fat>
+                  </bodyTypes>
+                  <!--crownTypes>
+								<Average_Normal>(0, 0)</Average_Normal>
+							</crownTypes-->
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Devil/Wingfront/DevilRightWing</path>
+              <bodyPart>Sandy_DevilRightWing</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(-0.427, 0.0)</Male>
+                    <Female>(-0.427, 0.0)</Female>
+                    <Hulk>(-0.53, 0.0)</Hulk>
+                    <Fat>(-0.54, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.25)</Male>
+                    <Female>(-0.017, 0.26)</Female>
+                    <Hulk>(0.05,0.28)</Hulk>
+                    <Fat>(0.06,0.28)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                  <crownTypes>
+                    <Average_Normal>(0, -0.9)</Average_Normal>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Devil/Wingfront/DevilLeftWing</path>
+              <bodyPart>Sandy_DevilLeftWing</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(-0.427, 0.0)</Male>
+                    <Female>(-0.427, 0.0)</Female>
+                    <Hulk>(-0.3, 0.0)</Hulk>
+                    <Fat>(-0.32, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.25)</Male>
+                    <Female>(0.012, 0.26)</Female>
+                    <Hulk>(-0.065,0.28)</Hulk>
+                    <Fat>(-0.065,0.28)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                  <crownTypes>
+                    <Average_Normal>(0, -0.9)</Average_Normal>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>0.7</drawSize>
+              <path>Pawns/Devil/Tail/DevilTail</path>
+              <bodyPart>Sandy_DevilTail</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.05, -0.2)</Male>
+                    <Female>(0.04, -0.2)</Female>
+                    <Hulk>(0.042, -0.3)</Hulk>
+                    <Fat>(0.035, -0.25)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(0.12, -0.2)</Male>
+                    <Female>(0.2, -0.2)</Female>
+                    <Hulk>(0.28, -0.3)</Hulk>
+                    <Fat>(0.3, -0.25)</Fat>
+                  </bodyTypes>
+                  <crownTypes>
+                    <Average_Normal>(0, 0)</Average_Normal>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>0.2</drawSize>
+              <path>Pawns/Devil/Horns/DevilLeftHorn</path>
+              <bodyPart>Sandy_DevilLeftHorn</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(-0.24, 0.68)</Male>
+                    <Female>(-0.24, 0.68)</Female>
+                    <Hulk>(-0.24, 0.68)</Hulk>
+                    <Fat>(-0.24, 0.68)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.78, 0.68)</Male>
+                    <Female>(-0.78, 0.68)</Female>
+                    <Hulk>(-0.78, 0.68)</Hulk>
+                    <Fat>(-0.78, 0.68)</Fat>
+                  </bodyTypes>
+                  <crownTypes>
+                    <Average_Normal>(0, 0)</Average_Normal>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <drawnInBed>true</drawnInBed>
+              <hiddenUnderApparelFor>
+                <li>FullHead</li>
+              </hiddenUnderApparelFor>
+            </li>
+            <li>
+              <drawSize>0.2</drawSize>
+              <path>Pawns/Devil/Horns/DevilRightHorn</path>
+              <bodyPart>Sandy_DevilRightHorn</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(-0.6, 0.68)</Male>
+                    <Female>(-0.6, 0.68)</Female>
+                    <Hulk>(-0.6, 0.68)</Hulk>
+                    <Fat>(-0.6, 0.68)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.78, 0.68)</Male>
+                    <Female>(-0.78, 0.68)</Female>
+                    <Hulk>(-0.78, 0.68)</Hulk>
+                    <Fat>(-0.78, 0.68)</Fat>
+                  </bodyTypes>
+                  <crownTypes>
+                    <Average_Normal>(0, 0)</Average_Normal>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <drawnInBed>true</drawnInBed>
+              <hiddenUnderApparelFor>
+                <li>FullHead</li>
+              </hiddenUnderApparelFor>
+            </li>
+            <li>
+              <drawSize>0.2</drawSize>
+              <path>Pawns/Devil/Horns/DevilLeftHorn_Hidden</path>
+              <bodyPart>Sandy_DevilLeftHorn</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(-0.24, 0.68)</Male>
+                    <Female>(-0.24, 0.68)</Female>
+                    <Hulk>(-0.24, 0.68)</Hulk>
+                    <Fat>(-0.24, 0.68)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.78, 0.68)</Male>
+                    <Female>(-0.78, 0.68)</Female>
+                    <Hulk>(-0.78, 0.68)</Hulk>
+                    <Fat>(-0.78, 0.68)</Fat>
+                  </bodyTypes>
+                  <crownTypes>
+                    <Average_Normal>(0, 0)</Average_Normal>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <drawnInBed>true</drawnInBed>
+              <hiddenUnderApparelFor>
+                <li>FullHead</li>
+              </hiddenUnderApparelFor>
+            </li>
+            <li>
+              <drawSize>0.2</drawSize>
+              <path>Pawns/Devil/Horns/DevilRightHorn_Hidden</path>
+              <bodyPart>Sandy_DevilRightHorn</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(-0.6, 0.68)</Male>
+                    <Female>(-0.6, 0.68)</Female>
+                    <Hulk>(-0.6, 0.68)</Hulk>
+                    <Fat>(-0.6, 0.68)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.78, 0.68)</Male>
+                    <Female>(-0.78, 0.68)</Female>
+                    <Hulk>(-0.78, 0.68)</Hulk>
+                    <Fat>(-0.78, 0.68)</Fat>
+                  </bodyTypes>
+                  <crownTypes>
+                    <Average_Normal>(0, 0)</Average_Normal>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <drawnInBed>true</drawnInBed>
+              <hiddenUnderApparelFor>
+                <li>FullHead</li>
+              </hiddenUnderApparelFor>
+            </li>
+          </bodyAddons>
+        </alienPartGenerator>
+      </generalSettings>
+      <graphicPaths>
+        <li>
+          <!--body>Pawns/Kilhn/Body/</body-->
+          <!--head>Pawns/Kilhn/Head/</head-->
+          <!--skeleton>TestPawn/Dessicated/</skeleton>
+                <skull>TestPawn/Skull/</skull-->
+        </li>
+      </graphicPaths>
+      <hairSettings>
+        <hasHair>true</hasHair>
+        <getsGreyAt>700</getsGreyAt>
+      </hairSettings>
+      <!--pawnKindSettings>
+
+        </pawnKindSettings-->
+      <thoughtSettings>
+        <cannotReceiveThoughts>
+          <li>AteCorpse</li>
+          <li>AteHumanlikeMeatAsIngredient</li>
+          <li>AteHumanlikeMeatDirect</li>
+          <li>ButcheredHumanlikeCorpse</li>
+          <li>KnowButcheredHumanlikeCorpse</li>
+          <li>ObservedLayingCorpse</li>
+        </cannotReceiveThoughts>
+      </thoughtSettings>
+      <relationSettings>
+      </relationSettings>
+      <raceRestriction>
+      </raceRestriction>
+    </alienRace>
+    <statBases>
+      <MarketValue>2600</MarketValue>
+      <MoveSpeed>5.0</MoveSpeed>
+      <Flammability>0.5</Flammability>
+      <ComfyTemperatureMin>16</ComfyTemperatureMin>
+      <ComfyTemperatureMax>36</ComfyTemperatureMax>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.50</ArmorRating_Heat>
+      <LeatherAmount>50</LeatherAmount>
+      <RoyalFavorValue>5</RoyalFavorValue>
+      <ToxicSensitivity>0.5</ToxicSensitivity>
+      <PsychicSensitivity>0.5</PsychicSensitivity>
+      <MentalBreakThreshold>0.7</MentalBreakThreshold>
+      <SocialImpact>0.8</SocialImpact>
+      <TameAnimalChance>0.8</TameAnimalChance>
+      <TrainAnimalChance>0.8</TrainAnimalChance>
+      <CookSpeed>1.2</CookSpeed>
+      <MiningSpeed>1.2</MiningSpeed>
+      <HuntingStealth>2</HuntingStealth>
+      <ConstructionSpeed>1.2</ConstructionSpeed>
+      <ButcheryFleshSpeed>1.2</ButcheryFleshSpeed>
+      <ButcheryFleshEfficiency>1.2</ButcheryFleshEfficiency>
+      <NegotiationAbility>1.3</NegotiationAbility>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+      <li>
+        <label>horn</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.3</chanceFactor>
+      </li>
+      <li>
+        <label>tail</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Sandy_DevilTail_Gr</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.3</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <leatherDef>Leather_Human</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>Sandy_DevilBody</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>2</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <meatMarketValue>0.8</meatMarketValue>
+      <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(14,0)</li>
+          <li>(16,100)</li>
+          <li>(50,100)</li>
+          <li>(60,30)</li>
+          <li>(70,18)</li>
+          <li>(80,10)</li>
+          <li>(90,3)</li>
+          <li>(100,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+        <li>Human</li>
+      </hediffGiverSets>
+    </race>
+    <recipes>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+    </recipes>
+  </AlienRace.ThingDef_AlienRace>
+</Defs>

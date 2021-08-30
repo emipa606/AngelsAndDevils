@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- ============================ Pirate Normal li/1 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[1]/options</xpath>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <value>
+          <SAD_Devil_Drifter>5</SAD_Devil_Drifter>
+          <SAD_Devil_Thrasher>2</SAD_Devil_Thrasher>
+          <SAD_Devil_Scavenger>5</SAD_Devil_Scavenger>
+          <SAD_Devil_Pirate>5</SAD_Devil_Pirate>
+          <SAD_Devil_Grenadier_EMP>0.25</SAD_Devil_Grenadier_EMP>
+          <SAD_Devil_Grenadier_Smoke>0.25</SAD_Devil_Grenadier_Smoke>
+          <SAD_Devil_Grenadier_Destructive>1</SAD_Devil_Grenadier_Destructive>
+          <SAD_Devil_Mercenary_Gunner>5</SAD_Devil_Mercenary_Gunner>
+          <SAD_Devil_Mercenary_Heavy>3</SAD_Devil_Mercenary_Heavy>
+          <SAD_Devil_Mercenary_Slasher>2</SAD_Devil_Mercenary_Slasher>
+          <SAD_Devil_Mercenary_Sniper>3</SAD_Devil_Mercenary_Sniper>
+          <SAD_Devil_Mercenary_Elite>5</SAD_Devil_Mercenary_Elite>
+          <SAD_Devil_PirateBoss>2</SAD_Devil_PirateBoss>
+        </value>
+      </li>
+      <!-- ============================ Pirate Slasher li/2 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[2]/options</xpath>
+        <!-- Normal fights, melee-only -->
+        <value>
+          <SAD_Devil_Thrasher>5</SAD_Devil_Thrasher>
+          <SAD_Devil_Mercenary_Slasher>5</SAD_Devil_Mercenary_Slasher>
+          <SAD_Devil_PirateBoss>2</SAD_Devil_PirateBoss>
+        </value>
+      </li>
+      <!-- ============================ Pirate Base li/3 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[3]/options</xpath>
+        <!-- Normal fights, ranged only -->
+        <value>
+          <SAD_Devil_Scavenger>5</SAD_Devil_Scavenger>
+          <SAD_Devil_Pirate>5</SAD_Devil_Pirate>
+          <SAD_Devil_Grenadier_EMP>0.25</SAD_Devil_Grenadier_EMP>
+          <SAD_Devil_Grenadier_Smoke>0.25</SAD_Devil_Grenadier_Smoke>
+          <SAD_Devil_Grenadier_Destructive>1</SAD_Devil_Grenadier_Destructive>
+          <SAD_Devil_Mercenary_Gunner>5</SAD_Devil_Mercenary_Gunner>
+          <SAD_Devil_Mercenary_Heavy>3</SAD_Devil_Mercenary_Heavy>
+          <SAD_Devil_Mercenary_Sniper>3</SAD_Devil_Mercenary_Sniper>
+          <SAD_Devil_Mercenary_Elite>5</SAD_Devil_Mercenary_Elite>
+          <SAD_Devil_PirateBoss>2</SAD_Devil_PirateBoss>
+        </value>
+      </li>
+      <!-- ============================ Pirate Base li/4 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[4]/options</xpath>
+        <!-- Normal fights, explosives with ranged mix-ins -->
+        <value>
+          <SAD_Devil_Grenadier_EMP>0.25</SAD_Devil_Grenadier_EMP>
+          <SAD_Devil_Grenadier_Smoke>0.25</SAD_Devil_Grenadier_Smoke>
+          <SAD_Devil_Grenadier_Destructive>5</SAD_Devil_Grenadier_Destructive>
+          <SAD_Devil_Mercenary_Gunner>0.5</SAD_Devil_Mercenary_Gunner>
+          <SAD_Devil_Mercenary_Heavy>5</SAD_Devil_Mercenary_Heavy>
+          <SAD_Devil_Mercenary_Elite>0.5</SAD_Devil_Mercenary_Elite>
+          <SAD_Devil_PirateBoss>0.5</SAD_Devil_PirateBoss>
+        </value>
+      </li>
+      <!-- ============================ Pirate Base li/5 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[5]/options</xpath>
+        <!-- Normal fights, snipers only -->
+        <value>
+          <SAD_Devil_Mercenary_Sniper>5</SAD_Devil_Mercenary_Sniper>
+        </value>
+      </li>
+      <!-- ============================ Pirate Base li/6 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[6]/options</xpath>
+        <!-- Normal fights, drifters only (very rare) -->
+        <value>
+          <SAD_Devil_Drifter>5</SAD_Devil_Drifter>
+        </value>
+      </li>
+      <!-- ============================ Pirate Base li/7 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[7]/options</xpath>
+        <!-- Base defense, mainly ranged with melee mix-ins -->
+        <value>
+          <SAD_Devil_Thrasher>2</SAD_Devil_Thrasher>
+          <SAD_Devil_Pirate>5</SAD_Devil_Pirate>
+          <SAD_Devil_Grenadier_Destructive>1</SAD_Devil_Grenadier_Destructive>
+          <SAD_Devil_Mercenary_Slasher>2</SAD_Devil_Mercenary_Slasher>
+          <SAD_Devil_Mercenary_Sniper>5</SAD_Devil_Mercenary_Sniper>
+          <SAD_Devil_Mercenary_Gunner>5</SAD_Devil_Mercenary_Gunner>
+          <SAD_Devil_Mercenary_Elite>5</SAD_Devil_Mercenary_Elite>
+          <SAD_Devil_PirateBoss>5</SAD_Devil_PirateBoss>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

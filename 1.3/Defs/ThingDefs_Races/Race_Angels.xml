@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="SAD_Angel">
+    <defName>Sandy_Angel</defName>
+    <label>Angel</label>
+    <description>An Angel. These people are humans that got resurrected as angels by a special power that works in mysterious ways. These people are kind and full of love.</description>
+    <alienRace>
+      <generalSettings>
+        <maleGenderProbability>0.5</maleGenderProbability>
+        <!--useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories-->
+        <immuneToAge>true</immuneToAge>
+        <forcedRaceTraitEntries>
+          <!--li>
+                    <defName>NaturalMood</defName>
+                    <degree>2</degree>
+                    <chance>50</chance>
+                    <commonalityMale>50</commonalityMale>
+                    <commonalityFemale>20</commonalityFemale>
+                </li>
+                <li>
+                    <defName>Nerves</defName>
+                    <degree>2</degree>
+                    <chance>50</chance>
+                    <CommonalityMale>50</CommonalityMale>
+                </li>
+                <li>
+                    <defName>Beauty</defName>
+                    <degree>2</degree>
+                    <chance>50</chance>
+                </li>
+                <li>
+                    <defName>Gay</defName>
+                    <chance>50</chance>
+                </li-->
+          <li>
+            <defName>Kind</defName>
+            <chance>100</chance>
+            <commonalityMale>100</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+          </li>
+          <li>
+            <defName>Immunity</defName>
+            <degree>1</degree>
+            <chance>100</chance>
+            <commonalityMale>100</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+          </li>
+        </forcedRaceTraitEntries>
+        <disallowedTraits>
+          <li>
+            <defName>Bloodlust</defName>
+          </li>
+          <li>
+            <defName>Psychopath</defName>
+          </li>
+          <li>
+            <defName>Cannibal</defName>
+          </li>
+          <!--li>Industriousness</li-->
+        </disallowedTraits>
+        <!--factionRelations>
+                <li>
+                    <factions>
+                       <li>Kilhn Clutch</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>100</max>
+                    </goodwill>
+                </li>               
+            </factionRelations-->
+        <allowHumanBios>true</allowHumanBios>
+        <humanRecipeImport>true</humanRecipeImport>
+        <alienPartGenerator>
+          <aliencrowntypes>
+            <li>Average_Normal</li>
+            <!--li>Test_letsWriteSomethingElseHere</li-->
+          </aliencrowntypes>
+          <alienbodytypes>
+            <li>Male</li>
+            <li>Female</li>
+            <li>Hulk</li>
+            <li>Fat</li>
+          </alienbodytypes>
+          <useGenderedHeads>true</useGenderedHeads>
+          <useGenderedBodies>false</useGenderedBodies>
+          <customDrawSize>(1.0, 1.0)</customDrawSize>
+          <customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+          <customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+          <customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+          <!--headOffset>(0.25, 0.15)</headOffset-->
+          <!--headBodyPartDef>Sandy_AngelHalo</headBodyPartDef-->
+          <bodyAddons>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Angel/Wings/AngelRightWing</path>
+              <bodyPart>Sandy_AngelRightWing</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <angle>-10</angle>
+              <defaultOffset>Tail</defaultOffset>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.5)</Male>
+                    <Female>(0.012, 0.5)</Female>
+                    <Hulk>(0.012,0.5)</Hulk>
+                    <Fat>(0.012,0.5)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.3, 0.0)</Male>
+                    <Female>(-0.355, 0.0)</Female>
+                    <Hulk>(-0.3,-0.02)</Hulk>
+                    <Fat>(-0.25,0.02)</Fat>
+                  </bodyTypes>
+                  <!--crownTypes>
+								<Average_Normal>(0, 0)</Average_Normal>
+							</crownTypes-->
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Angel/Wings/AngelLeftWing</path>
+              <bodyPart>Sandy_AngelLeftWing</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <angle>-10</angle>
+              <defaultOffset>Tail</defaultOffset>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.5)</Male>
+                    <Female>(0.012, 0.5)</Female>
+                    <Hulk>(0.012,0.5)</Hulk>
+                    <Fat>(0.012,0.5)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.3, 0.0)</Male>
+                    <Female>(-0.355, 0.0)</Female>
+                    <Hulk>(-0.3,-0.02)</Hulk>
+                    <Fat>(-0.25,0.02)</Fat>
+                  </bodyTypes>
+                  <!--crownTypes>
+								<Average_Normal>(0, 0)</Average_Normal>
+							</crownTypes-->
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Angel/Wings/AngelRightWing_Hidden</path>
+              <bodyPart>Sandy_AngelRightWing</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <angle>-10</angle>
+              <defaultOffset>Tail</defaultOffset>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.5)</Male>
+                    <Female>(0.012, 0.5)</Female>
+                    <Hulk>(0.012,0.5)</Hulk>
+                    <Fat>(0.012,0.5)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.3, 0.0)</Male>
+                    <Female>(-0.355, 0.0)</Female>
+                    <Hulk>(-0.3,-0.02)</Hulk>
+                    <Fat>(-0.25,0.02)</Fat>
+                  </bodyTypes>
+                  <!--crownTypes>
+								<Average_Normal>(0, 0)</Average_Normal>
+							</crownTypes-->
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Angel/Wings/AngelLeftWing_Hidden</path>
+              <bodyPart>Sandy_AngelLeftWing</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <angle>-10</angle>
+              <defaultOffset>Tail</defaultOffset>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.5)</Male>
+                    <Female>(0.012, 0.5)</Female>
+                    <Hulk>(0.012,0.5)</Hulk>
+                    <Fat>(0.012,0.5)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.3, 0.0)</Male>
+                    <Female>(-0.355, 0.0)</Female>
+                    <Hulk>(-0.3,-0.02)</Hulk>
+                    <Fat>(-0.25,0.02)</Fat>
+                  </bodyTypes>
+                  <!--crownTypes>
+								<Average_Normal>(0, 0)</Average_Normal>
+							</crownTypes-->
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Angel/Wingfront/AngelRightWing</path>
+              <bodyPart>Sandy_AngelRightWing</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <defaultOffset>Tail</defaultOffset>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(-0.427, 0.0)</Male>
+                    <Female>(-0.427, 0.0)</Female>
+                    <Hulk>(-0.53, 0.0)</Hulk>
+                    <Fat>(-0.54, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.25)</Male>
+                    <Female>(-0.017, 0.26)</Female>
+                    <Hulk>(0.05,0.28)</Hulk>
+                    <Fat>(0.06,0.28)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                  <crownTypes>
+                    <Average_Normal>(0, -0.9)</Average_Normal>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.1</drawSize>
+              <path>Pawns/Angel/Wingfront/AngelLeftWing</path>
+              <bodyPart>Sandy_AngelLeftWing</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <defaultOffset>Tail</defaultOffset>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(-0.427, 0.0)</Male>
+                    <Female>(-0.427, 0.0)</Female>
+                    <Hulk>(-0.3, 0.0)</Hulk>
+                    <Fat>(-0.32, 0.0)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.012, 0.25)</Male>
+                    <Female>(0.012, 0.26)</Female>
+                    <Hulk>(-0.065,0.28)</Hulk>
+                    <Fat>(-0.065,0.28)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(0.0, 0.0)</Male>
+                    <Female>(0.0, 0.0)</Female>
+                    <Hulk>(0.0, 0.0)</Hulk>
+                    <Fat>(0.0, 0.0)</Fat>
+                  </bodyTypes>
+                  <crownTypes>
+                    <Average_Normal>(0, -0.9)</Average_Normal>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <drawnInBed>false</drawnInBed>
+            </li>
+            <li>
+              <drawSize>1.0</drawSize>
+              <path>Pawns/Angel/Halo/AngelHalo</path>
+              <!--bodyPart>Sandy_AngelHalo</bodyPart-->
+              <inFrontOfBody>true</inFrontOfBody>
+              <colorChannel>base</colorChannel>
+              <defaultOffset>Tail</defaultOffset>
+              <!--layerOffset>0.02</layerOffset-->
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Male>(-0.41, 0.5)</Male>
+                    <Female>(-0.41, 0.5)</Female>
+                    <Hulk>(-0.41, 0.5)</Hulk>
+                    <Fat>(-0.41, 0.5)</Fat>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Male>(0.0, 0.8)</Male>
+                    <Female>(0.0, 0.8)</Female>
+                    <Hulk>(0.0, 0.8)</Hulk>
+                    <Fat>(0.0, 0.8)</Fat>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Male>(-0.527, 0.5)</Male>
+                    <Female>(-0.527, 0.5)</Female>
+                    <Hulk>(-0.527, 0.5)</Hulk>
+                    <Fat>(-0.527, 0.5)</Fat>
+                  </bodyTypes>
+                  <crownTypes>
+                    <Average_Normal>(0, 0)</Average_Normal>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <drawnInBed>true</drawnInBed>
+            </li>
+          </bodyAddons>
+        </alienPartGenerator>
+      </generalSettings>
+      <graphicPaths>
+        <li>
+          <!--body>Pawns/Kilhn/Body/</body-->
+          <!--head>Pawns/Kilhn/Head/</head-->
+          <!--skeleton>TestPawn/Dessicated/</skeleton>
+                <skull>TestPawn/Skull/</skull-->
+        </li>
+      </graphicPaths>
+      <!--pawnKindSettings>
+
+        </pawnKindSettings-->
+      <thoughtSettings>
+        <cannotReceiveThoughts>
+          <li>PawnWithBadOpinionDied</li>
+        </cannotReceiveThoughts>
+      </thoughtSettings>
+      <relationSettings>
+      </relationSettings>
+      <raceRestriction>
+      </raceRestriction>
+    </alienRace>
+    <statBases>
+      <MarketValue>2250</MarketValue>
+      <MoveSpeed>5.0</MoveSpeed>
+      <Flammability>1.0</Flammability>
+      <ComfyTemperatureMin>6</ComfyTemperatureMin>
+      <ComfyTemperatureMax>26</ComfyTemperatureMax>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <LeatherAmount>50</LeatherAmount>
+      <RoyalFavorValue>5</RoyalFavorValue>
+      <PawnBeauty>0.5</PawnBeauty>
+      <SocialImpact>1.2</SocialImpact>
+      <TameAnimalChance>1.2</TameAnimalChance>
+      <TrainAnimalChance>1.2</TrainAnimalChance>
+      <MiningSpeed>0.80</MiningSpeed>
+      <PlantWorkSpeed>1.2</PlantWorkSpeed>
+      <MedicalTendSpeed>1.2</MedicalTendSpeed>
+      <MedicalTendQuality>2.0</MedicalTendQuality>
+      <MedicalOperationSpeed>1.2</MedicalOperationSpeed>
+      <MedicalSurgerySuccessChance>2.0</MedicalSurgerySuccessChance>
+      <ButcheryFleshSpeed>0.5</ButcheryFleshSpeed>
+      <ButcheryFleshEfficiency>0.5</ButcheryFleshEfficiency>
+      <NegotiationAbility>1.3</NegotiationAbility>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <leatherDef>Leather_Human</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>Sandy_AngelBody</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>2</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <meatMarketValue>0.8</meatMarketValue>
+      <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(14,0)</li>
+          <li>(16,100)</li>
+          <li>(50,100)</li>
+          <li>(60,30)</li>
+          <li>(70,18)</li>
+          <li>(80,10)</li>
+          <li>(90,3)</li>
+          <li>(100,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+        <li>Human</li>
+      </hediffGiverSets>
+    </race>
+    <recipes>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+    </recipes>
+  </AlienRace.ThingDef_AlienRace>
+</Defs>

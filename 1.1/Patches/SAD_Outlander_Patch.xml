@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- ============================ Outlander Combat li/1 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
+        <value>
+          <SAD_Devil_Villager>3</SAD_Devil_Villager>
+          <SAD_Devil_Town_Guard>4</SAD_Devil_Town_Guard>
+          <SAD_Devil_Grenadier_Destructive>1.5</SAD_Devil_Grenadier_Destructive>
+          <SAD_Devil_Mercenary_Slasher>7</SAD_Devil_Mercenary_Slasher>
+          <SAD_Devil_Mercenary_Gunner>7</SAD_Devil_Mercenary_Gunner>
+          <SAD_Devil_Mercenary_Elite>7</SAD_Devil_Mercenary_Elite>
+          <SAD_Devil_Town_Councilman>5</SAD_Devil_Town_Councilman>
+        </value>
+      </li>
+      <!-- ============================ Outlander Peaceful li/2 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[2]/options</xpath>
+        <value>
+          <SAD_Angel_Villager>14</SAD_Angel_Villager>
+          <SAD_Angel_Town_Guard>7</SAD_Angel_Town_Guard>
+          <SAD_Angel_Town_Councilman>7</SAD_Angel_Town_Councilman>
+        </value>
+      </li>
+      <!-- ============================ Outlander Trader li/3 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[3]/guards</xpath>
+        <value>
+          <SAD_Angel_Villager>3</SAD_Angel_Villager>
+          <SAD_Angel_Town_Guard>4</SAD_Angel_Town_Guard>
+          <SAD_Devil_Grenadier_Destructive>1.5</SAD_Devil_Grenadier_Destructive>
+          <SAD_Devil_Mercenary_Slasher>7</SAD_Devil_Mercenary_Slasher>
+          <SAD_Devil_Mercenary_Gunner>7</SAD_Devil_Mercenary_Gunner>
+          <SAD_Devil_Mercenary_Elite>7</SAD_Devil_Mercenary_Elite>
+        </value>
+      </li>
+      <!-- ============================ Outlander Settlement li/4 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
+        <value>
+          <SAD_Angel_Villager>5</SAD_Angel_Villager>
+          <SAD_Angel_Town_Guard>5</SAD_Angel_Town_Guard>
+          <SAD_Devil_Villager>5</SAD_Devil_Villager>
+          <SAD_Devil_Town_Guard>5</SAD_Devil_Town_Guard>
+          <SAD_Devil_Grenadier_Destructive>1.5</SAD_Devil_Grenadier_Destructive>
+          <SAD_Devil_Mercenary_Slasher>4</SAD_Devil_Mercenary_Slasher>
+          <SAD_Devil_Mercenary_Gunner>5</SAD_Devil_Mercenary_Gunner>
+          <SAD_Devil_Mercenary_Elite>5</SAD_Devil_Mercenary_Elite>
+          <SAD_Angel_Town_Councilman>5</SAD_Angel_Town_Councilman>
+          <SAD_Devil_Town_Councilman>5</SAD_Devil_Town_Councilman>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

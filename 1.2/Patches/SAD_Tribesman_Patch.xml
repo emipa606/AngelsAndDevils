@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- ============================ Normal fights, ranged with melee mix-ins li/1 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[1]/options</xpath>
+        <value>
+          <SAD_Devil_Tribal_Penitent>3</SAD_Devil_Tribal_Penitent>
+          <SAD_Devil_Tribal_Warrior>3</SAD_Devil_Tribal_Warrior>
+          <SAD_Devil_Tribal_Archer>5</SAD_Devil_Tribal_Archer>
+          <SAD_Devil_Tribal_Hunter>5</SAD_Devil_Tribal_Hunter>
+          <SAD_Devil_Tribal_HeavyArcher>5</SAD_Devil_Tribal_HeavyArcher>
+          <SAD_Devil_Tribal_Berserker>3</SAD_Devil_Tribal_Berserker>
+          <SAD_Devil_Tribal_ChiefRanged>2</SAD_Devil_Tribal_ChiefRanged>
+          <SAD_Devil_Tribal_ChiefMelee>1</SAD_Devil_Tribal_ChiefMelee>
+        </value>
+      </li>
+      <!-- ============================ Normal fights, ranged only li/2 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[2]/options</xpath>
+        <value>
+          <SAD_Devil_Tribal_Archer>5</SAD_Devil_Tribal_Archer>
+          <SAD_Devil_Tribal_Hunter>5</SAD_Devil_Tribal_Hunter>
+          <SAD_Devil_Tribal_HeavyArcher>5</SAD_Devil_Tribal_HeavyArcher>
+          <SAD_Devil_Tribal_ChiefRanged>3</SAD_Devil_Tribal_ChiefRanged>
+        </value>
+      </li>
+      <!-- ============================ Normal fights, melee only li/3 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[3]/options</xpath>
+        <value>
+          <SAD_Devil_Tribal_Penitent>5</SAD_Devil_Tribal_Penitent>
+          <SAD_Devil_Tribal_Warrior>5</SAD_Devil_Tribal_Warrior>
+          <SAD_Devil_Tribal_Berserker>5</SAD_Devil_Tribal_Berserker>
+          <SAD_Devil_Tribal_ChiefMelee>3</SAD_Devil_Tribal_ChiefMelee>
+        </value>
+      </li>
+      <!-- ============================ Peaceful li/4 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[4]/options</xpath>
+        <value>
+          <SAD_Angel_Tribal_Warrior>10</SAD_Angel_Tribal_Warrior>
+          <SAD_Angel_Tribal_Archer>5</SAD_Angel_Tribal_Archer>
+          <SAD_Angel_Tribal_Hunter>5</SAD_Angel_Tribal_Hunter>
+          <SAD_Angel_Tribal_HeavyArcher>5</SAD_Angel_Tribal_HeavyArcher>
+          <SAD_Angel_Tribal_Berserker>3</SAD_Angel_Tribal_Berserker>
+          <SAD_Angel_Tribal_ChiefRanged>2</SAD_Angel_Tribal_ChiefRanged>
+          <SAD_Angel_Tribal_ChiefMelee>1</SAD_Angel_Tribal_ChiefMelee>
+        </value>
+      </li>
+      <!-- ============================ Trader li/5 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[5]/guards</xpath>
+        <value>
+          <SAD_Angel_Tribal_Warrior>3</SAD_Angel_Tribal_Warrior>
+          <SAD_Angel_Tribal_Archer>5</SAD_Angel_Tribal_Archer>
+          <SAD_Devil_Tribal_Hunter>5</SAD_Devil_Tribal_Hunter>
+          <SAD_Devil_Tribal_HeavyArcher>5</SAD_Devil_Tribal_HeavyArcher>
+          <SAD_Devil_Tribal_Berserker>3</SAD_Devil_Tribal_Berserker>
+        </value>
+      </li>
+      <!-- ============================ TribeBase Settlement li/6 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[6]</xpath>
+        <value>
+          <commonality>50</commonality>
+        </value>
+      </li>
+      <!-- ============================ TribeCivil Settlement li/6 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName = "TribeCivil"]</xpath>
+        <value>
+          <pawnGroupMakers>
+            <li>
+              <kindDef>Settlement</kindDef>
+              <commonality>100</commonality>
+              <options>
+                <Tribal_Warrior>7</Tribal_Warrior>
+                <Tribal_Archer>10</Tribal_Archer>
+                <Tribal_Hunter>10</Tribal_Hunter>
+                <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+                <Tribal_Berserker>7</Tribal_Berserker>
+                <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+                <SAD_Angel_Tribal_Warrior>3</SAD_Angel_Tribal_Warrior>
+                <SAD_Angel_Tribal_Archer>5</SAD_Angel_Tribal_Archer>
+                <SAD_Angel_Tribal_ChiefRanged>5</SAD_Angel_Tribal_ChiefRanged>
+                <SAD_Devil_Tribal_Warrior>3</SAD_Devil_Tribal_Warrior>
+                <SAD_Devil_Tribal_Archer>5</SAD_Devil_Tribal_Archer>
+                <SAD_Devil_Tribal_Hunter>5</SAD_Devil_Tribal_Hunter>
+                <SAD_Devil_Tribal_HeavyArcher>5</SAD_Devil_Tribal_HeavyArcher>
+                <SAD_Devil_Tribal_Berserker>3</SAD_Devil_Tribal_Berserker>
+                <SAD_Devil_Tribal_ChiefRanged>5</SAD_Devil_Tribal_ChiefRanged>
+              </options>
+            </li>
+          </pawnGroupMakers>
+        </value>
+      </li>
+      <!-- ============================ TribeRough Settlement li/6 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName = "TribeRough"]</xpath>
+        <value>
+          <pawnGroupMakers>
+            <li>
+              <kindDef>Settlement</kindDef>
+              <commonality>100</commonality>
+              <options>
+                <Tribal_Warrior>7</Tribal_Warrior>
+                <Tribal_Archer>10</Tribal_Archer>
+                <Tribal_Hunter>10</Tribal_Hunter>
+                <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+                <Tribal_Berserker>7</Tribal_Berserker>
+                <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+                <SAD_Angel_Tribal_Warrior>3</SAD_Angel_Tribal_Warrior>
+                <SAD_Angel_Tribal_Archer>5</SAD_Angel_Tribal_Archer>
+                <SAD_Angel_Tribal_ChiefRanged>5</SAD_Angel_Tribal_ChiefRanged>
+                <SAD_Devil_Tribal_Warrior>3</SAD_Devil_Tribal_Warrior>
+                <SAD_Devil_Tribal_Archer>5</SAD_Devil_Tribal_Archer>
+                <SAD_Devil_Tribal_Hunter>5</SAD_Devil_Tribal_Hunter>
+                <SAD_Devil_Tribal_HeavyArcher>5</SAD_Devil_Tribal_HeavyArcher>
+                <SAD_Devil_Tribal_Berserker>3</SAD_Devil_Tribal_Berserker>
+                <SAD_Devil_Tribal_ChiefRanged>5</SAD_Devil_Tribal_ChiefRanged>
+              </options>
+            </li>
+          </pawnGroupMakers>
+        </value>
+      </li>
+      <!-- ============================ TribeSavage Settlement li/6 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName = "TribeSavage"]</xpath>
+        <value>
+          <pawnGroupMakers>
+            <li>
+              <kindDef>Settlement</kindDef>
+              <commonality>100</commonality>
+              <options>
+                <Tribal_Warrior>7</Tribal_Warrior>
+                <Tribal_Archer>10</Tribal_Archer>
+                <Tribal_Hunter>10</Tribal_Hunter>
+                <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+                <Tribal_Berserker>7</Tribal_Berserker>
+                <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+                <SAD_Devil_Tribal_Warrior>3</SAD_Devil_Tribal_Warrior>
+                <SAD_Devil_Tribal_Archer>5</SAD_Devil_Tribal_Archer>
+                <SAD_Devil_Tribal_Hunter>5</SAD_Devil_Tribal_Hunter>
+                <SAD_Devil_Tribal_HeavyArcher>5</SAD_Devil_Tribal_HeavyArcher>
+                <SAD_Devil_Tribal_Berserker>3</SAD_Devil_Tribal_Berserker>
+                <SAD_Devil_Tribal_ChiefRanged>5</SAD_Devil_Tribal_ChiefRanged>
+              </options>
+            </li>
+          </pawnGroupMakers>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
